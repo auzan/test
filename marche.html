@@ -1,0 +1,51 @@
+<?php
+include_once 'db_connect.php';
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <title>WSD</title>
+        <link rel="stylesheet" href="css/dist/css/bootstrap.css">
+        <link rel='icon' href='icones/favicon.png'/>
+        <link rel='stylesheet' href='css/styles.css'/>
+
+</head>
+<body>
+    <h1>Ajout d'un marché</h1>
+    <hr color='black'/>
+<div class="container">
+    
+    
+    <form  class="form-horizontal" method='post' action='traitementFormMarche.php'>
+        
+   
+        <div class="form-group">
+            <label class="control-label col-xs-2">Lieu du marché : </label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" name="lieuMarche" placeholder="Lieu du marché">
+            </div>
+        </div>
+        
+         <div class="form-group">
+            <label class="control-label col-xs-2">Qualité : </label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" name="qualiteMarche" placeholder="Qualité du marché">
+            </div>
+         </div>
+        
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="reset" class="btn btn-danger">Annuler</button>
+                
+
+            </div>
+        </div>
+    </form>
+</div>
+
+    
+</body>
+</html>
